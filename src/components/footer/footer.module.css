@@ -1,0 +1,36 @@
+.footer{width: 100%;height: 150px;background: #292929; }
+.footer .container{max-width: 1440px; height: 100%; margin: 0 auto; display: flex; justify-content: center; align-items: center; align-items: center;}
+.footer .container > div{width: 225px;}
+.copy{}
+.copy em{font-size: 18px;color: #f0f0f0;}
+
+.sns{margin: 0 100px;}
+.sns ul{display: grid; grid-template-columns: 35px 35px 35px 35px; grid-gap: 0 10px; justify-content: center;}
+.sns ul li{width: 35px;height: 35px; margin: 0 5px; border-radius: 50%; background: #575757;}
+.sns ul li a{width: 100%;height: 100%; display: block; position: relative;}
+.sns ul li a img{object-fit: cover; position: absolute; top: 50%;left: 50%; transform: translate(-50%,-50%);}
+.sns ul li:nth-child(1) a img{width: 19px;height: 16px;}
+.sns ul li:nth-child(2) a img{width: 18px;height: 18px;}
+.sns ul li:nth-child(3) a img{width: 11px;height: 21px;}
+.sns ul li:nth-child(4) a img{width: 20px;height: 14px;}
+
+.telephone{}
+.telephone em{font-size: 18px;color: #f0f0f0;}
+.telephone .tel_icon{font-size: 18px;color: #f0f0f0; margin-right: 5px;}
+
+@media (max-width : 1023px){
+    .footer .container{justify-content: space-between; }
+    .footer .container > div{width: 100%; padding: 0 20px; box-sizing: border-box;}
+
+    .sns{margin: 0 0px;}
+    .sns ul{grid-template-columns: 35px 35px; grid-gap: 10px;}
+
+    .telephone em{font-size: 16px;}
+
+}
+
+@media (max-width : 500px){
+    .sns{margin: 0 0px;}
+    .copy em{font-size: 14px;}
+    .telephone em{font-size: 14px;}
+}
